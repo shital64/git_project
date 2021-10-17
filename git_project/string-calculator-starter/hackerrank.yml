@@ -1,0 +1,11 @@
+version: 1.0
+configuration:
+  has_webserver: false
+  scoring:
+    command: ./gradlew test
+  ide_config:
+    default_open_files:
+      - ./src/main/java/calculator/StringCalculator.java
+    project_menu:
+      install: ./gradlew clean build
+      test: ./gradlew test
